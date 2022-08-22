@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio Bryan Ferrando",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "bryan",
+    "ferrando",
+    "dev",
+    "developpeur",
+    "web",
+    "mobile"
+  ],
+  "author": "Bryan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "bootswatch": "^5.2.0"
+  }
+}

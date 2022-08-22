@@ -1,0 +1,84 @@
+$light: #f8f9fa;
+$dark: #212529;
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212529 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #55555580 !important;
+}
+
+::-webkit-scrollbar:hover {
+  background: #aaaaaa80 !important;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-image: url('../assets/img/cartographer.png');
+  background-size: 50%;
+  background-color: #212529;
+}
+
+.nav-item {
+  &:hover {
+    background-color: rgba($color: $light, $alpha: 0.1);
+  }
+}
+
+.navbar-spacing {
+  padding-top: 100px;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+#projects {
+  figure {
+    position: relative;
+    
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px 10px;
+      background-color: rgba($color: $dark, $alpha: 0.75);
+    }
+  }
+}
+
+.underline {
+  position: relative;
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    bottom: -3px;
+    left: 10%;
+    border-radius: 15px;
+    background-color: $light;
+  }
+}
+
+.text-area-form {
+  height: 150px !important;
+  resize: none;
+}
+
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./bootswatch";
